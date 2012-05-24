@@ -1,0 +1,8 @@
+Changes
+Derivative_XS.xs
+Makefile.PL
+MANIFEST
+ppport.h
+README
+t/Math-Derivative_XS.t
+lib/Math/Derivative_XS.pm
