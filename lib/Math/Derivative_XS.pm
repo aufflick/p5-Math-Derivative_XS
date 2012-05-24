@@ -25,7 +25,7 @@ our $VERSION = '0.01';
 require XSLoader;
 XSLoader::load('Math::Derivative_XS', $VERSION);
 
-sub Derivative1 { &Math::Derivative1; };
+sub Derivative1 { &Math::Derivative::Derivative1; };
 
 1;
 __END__

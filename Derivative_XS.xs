@@ -8,7 +8,11 @@
 MODULE = Math::Derivative_XS		PACKAGE = Math::Derivative_XS		
 
 void
-Derivative2(AV * x, AV * y, SV * yp1_sv, SV * ypn_sv)
+Derivative2(x, y, yp1_sv = NULL, ypn_sv = NULL)
+        AV * x
+        AV * y
+        SV * yp1_sv
+        SV * ypn_sv
     PPCODE:
         {
             int i;
@@ -16,7 +20,7 @@ Derivative2(AV * x, AV * y, SV * yp1_sv, SV * ypn_sv)
             NV * y2 = calloc(n, sizeof(NV));
             NV * u = calloc(n, sizeof(NV));
 
-            if (!SvOK(yp1_sv))
+            if (!yp1_sv || !SvOK(yp1_sv))
             {
                 y2[0] = 0;
                 u[0] = 0;
@@ -57,7 +61,7 @@ Derivative2(AV * x, AV * y, SV * yp1_sv, SV * ypn_sv)
             }
 
             NV qn, un;
-            if (!SvOK(ypn_sv))
+            if (!ypn_sv || !SvOK(ypn_sv))
             {
                 qn = 0;
                 un = 0;
@@ -88,6 +92,4 @@ Derivative2(AV * x, AV * y, SV * yp1_sv, SV * ypn_sv)
 
             free(y2);
             free(u);
-
-            XSRETURN(n);
         }
