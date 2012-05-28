@@ -4,5 +4,6 @@ Makefile.PL
 MANIFEST
 ppport.h
 README
-t/Math-Derivative_XS.t
+t/01_Math-Derivative_XS.t
+t/02_regression.t
 lib/Math/Derivative_XS.pm

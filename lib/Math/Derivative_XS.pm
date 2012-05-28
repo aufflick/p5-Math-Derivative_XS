@@ -61,7 +61,7 @@ L<Math::Derivative>
 
 =head1 CAVEATS
 
-This module, like Math::Derivative, ships with no tests. Until this is rectified use at your own risk!
+This module's tests only confirm no regression from Math::Derivative, not correctness of the maths.
 
 =head1 AUTHOR
 
