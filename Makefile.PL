@@ -15,6 +15,7 @@ WriteMakefile(
     # OBJECT            => '$(O_FILES)', # link all the C files too
     BUILD_REQUIRES    => {
         'Test::More' => 0,
+        'YAML::XS'   => 0,
     },
     PREREQ_PM         => {
         'Math::Derivative' => 0,
