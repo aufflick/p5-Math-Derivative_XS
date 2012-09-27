@@ -3,7 +3,7 @@ Math-Derivative_XS version 0.01
 
 Provides an XS implementation for part of Math::Derivative (and fallsback to Perl for the rest).
 
-INSTALLATIONn
+INSTALLATION
 
 To install this module type the following:
 
