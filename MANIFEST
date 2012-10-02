@@ -6,4 +6,5 @@ ppport.h
 README
 t/01_Math-Derivative_XS.t
 t/02_regression.t
+t/02_regression.yml
 lib/Math/Derivative_XS.pm
